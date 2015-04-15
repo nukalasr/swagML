@@ -1,0 +1,43 @@
+class User {
+email:string
+firstName:string
+id:integer
+lastName:string
+password:string
+phone:string
+userStatus:integer
+username:string
+}
+class Pet {
+category:Category {}
+id:integer
+name:string
+photoUrls:[]
+status:	string
+tags:[]
+}
+
+class Category {
+id:integer
+name:string
+}
+
+class Order {
+complete:boolean
+id:integer
+petId:integer
+quantity:integer
+shipDate:string
+status:string
+}
+
+class Tag {
+id:integer
+name:string
+}
+class store{
+}
+
+store *-- Pet : [POST]/stores/order
+
+
